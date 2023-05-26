@@ -3,19 +3,19 @@
 /**
   * push - Adds a new node at the beginning of the stack
   * @stack: The head of the stack
-  * @param: The value to adds on the stack
+  * @data: The data to push on the stack
   *
   * Return: Nothing
   */
-void push(stack_t **stack, unsigned int param)
+void push(stack_t **stack, unsigned int data)
 {
 	stack_t *new_node = NULL;
 
 	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
+	if (!new_node)
 		handle_error(ERR_MALLOC, NULL, 0, NULL);
 
-	new_node->n = param;
+	new_node->n = data;
 	if (*stack)
 	{
 		new_node->next = *stack;
@@ -33,19 +33,19 @@ void push(stack_t **stack, unsigned int param)
 /**
   * push_queue - Adds a new node at the end of the stack
   * @stack: The head of the stack
-  * @param: The value to adds on the stack
+  * @data: The value to push on the stack
   *
   * Return: Nothing
   */
-void push_queue(stack_t **stack, unsigned int param)
+void push_queue(stack_t **stack, unsigned int data)
 {
 	stack_t *current = NULL, *new_node = NULL;
 
 	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
+	if (!new_node)
 		handle_error(ERR_MALLOC, NULL, 0, NULL);
 
-	new_node->n = param;
+	new_node->n = data;
 	if (*stack)
 	{
 		current = *stack;

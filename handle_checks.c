@@ -40,7 +40,7 @@ int check_push_data(char *data)
 	if (data == NULL || check_digits(data) == 0)
 		return (ERR_PUSH);
 
-	return (VALID_PARM);
+	return (VALID_DATA);
 }
 
 /**

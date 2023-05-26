@@ -2,18 +2,17 @@
 #define __MONTY_H__
 
 /* Constants */
-#define SUCSS_OP		0
-#define VALID_PARM		0
+#define VALID_DATA		0
 #define MIN_ARGS		2
-#define METH_STACK		300
-#define METH_QUEUE		301
 
-/* Common Errors */
+/* General Error Codes */
 #define ERR_INVALID	100
 #define ERR_MALLOC	101
 #define ERR_INVLD_PARM	102
+#define METH_STACK		300
+#define METH_QUEUE		301
 
-/* Op Errors */
+/* Op Errors Codes */
 #define ERR_USAGE		200
 #define ERR_PUSH		201
 #define ERR_PINT		202
@@ -73,7 +72,7 @@ void handle_inv_malloc(int errno, char *opcode, unsigned int line);
 void handle_more_errors(int errno, unsigned int line);
 void (*select_op(char *s))(stack_t **, unsigned int);
 void handle_op_errors(int errno, unsigned int line);
-void push(stack_t **stack, unsigned int param);
+void push(stack_t **stack, unsigned int data);
 void check_read_permission(char *filename);
 unsigned int count_stack(stack_t *stack);
 int check_push_data(char *param);
@@ -83,7 +82,7 @@ void free_stack(void);
 void divide(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
-void push_queue(stack_t **stack, unsigned int param);
+void push_queue(stack_t **stack, unsigned int data);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);

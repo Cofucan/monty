@@ -3,7 +3,7 @@
 /**
   * rotr - Rotates the stack to the bottom
   * @stack: The head of the stack
-  * @line_number: The line on which the error occurred
+  * @line_number: Line number of the command in the bytecode file
   *
   * Return: Nothing
   */
@@ -28,19 +28,19 @@ void rotr(stack_t **stack, unsigned int line_number)
 /**
   * rotl - Rotates the stack to the top
   * @stack: The head of the stack
-  * @line_number: The line on which the error occurred
+  * @line_number: Line number of the command in the bytecode file
   *
   * Return: Nothing
   */
 void rotl(stack_t **stack, unsigned int line_number)
 {
-	stack_t *curr = *stack;
 	unsigned int temp = 0;
+	stack_t *curr = *stack;
 	(void) line_number;
 
 	if (curr && curr->next)
 	{
-		while (curr->next != NULL)
+		while (curr->next)
 		{
 			temp = curr->n;
 			curr->n = curr->next->n;
