@@ -52,3 +52,23 @@ push 2$
 push 3$
 pall$
 
+1. pint
+mandatory
+Score: 100.0% (Checks completed: 100.0%)
+Implement the pint opcode.
+
+The pint opcode
+
+The opcode pint prints the value at the top of the stack, followed by a new line.
+
+Usage: pint
+If the stack is empty, print the error message L<line_number>: can't pint, stack empty, followed by a new line, and exit with the status EXIT_FAILURE
+julien@ubuntu:~/monty$ cat bytecodes/06.m 
+push 1
+pint
+push 2
+pint
+push 3
+pint
+
+
