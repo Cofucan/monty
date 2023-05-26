@@ -94,4 +94,22 @@ pall
 pop
 pall
 
+3. swap
+mandatory
+Score: 100.0% (Checks completed: 100.0%)
+Implement the swap opcode.
+
+The swap opcode
+
+The opcode swap swaps the top two elements of the stack.
+
+Usage: swap
+If the stack contains less than two elements, print the error message L<line_number>: can't swap, stack too short, followed by a new line, and exit with the status EXIT_FAILURE
+julien@ubuntu:~/monty$ cat bytecodes/09.m 
+push 1
+push 2
+push 3
+pall
+swap
+pall
 
