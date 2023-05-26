@@ -53,8 +53,6 @@ int check_push_data(char *data)
 
 int check_digits(char *s)
 {
-	int status = 1;
-
 	while (*s != '\0')
 	{
 		if (s[0] == '-')
