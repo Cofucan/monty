@@ -145,3 +145,5 @@ The opcode nop doesn’t do anything.
 Usage: nop
 
 Task 0 - 5 are mandatory task
+
+## others are advanced task
