@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- * pop - Removes the top element of the stack
- * @stack: The head of the stack
+ * pop - func that removes the top element of the stack
+ * @stack: head of the stack
  * @line_number: The line on which the error occurred
  *
  * Return: Nothing
