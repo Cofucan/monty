@@ -3,5 +3,11 @@ CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89
 betty-all:
 	betty monty.h *.c
 
-monty:
-	gcc $(CFLAGS) *.c -o monty -g
+montys:
+	gcc $(CFLAGS) *.c monty.h -o monty -g
+
+tests:
+	for file in monty_files/*; do \
+		echo "Testing bytecodes for: $$file"; \
+		./monty $$file; \
+	done
