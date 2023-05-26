@@ -1,4 +1,3 @@
-/* write your code below */
 			     			Cell c0 = 0
 > ++++ ++++ + 				Cell c1 = 9
 
