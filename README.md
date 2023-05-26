@@ -71,4 +71,27 @@ pint
 push 3
 pint
 
+2. pop
+mandatory
+Score: 100.0% (Checks completed: 100.0%)
+Implement the pop opcode.
+
+The pop opcode
+
+The opcode pop removes the top element of the stack.
+
+Usage: pop
+If the stack is empty, print the error message L<line_number>: can't pop an empty stack, followed by a new line, and exit with the status EXIT_FAILURE
+julien@ubuntu:~/monty$ cat bytecodes/07.m 
+push 1
+push 2
+push 3
+pall
+pop
+pall
+pop
+pall
+pop
+pall
+
 
