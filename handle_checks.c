@@ -48,7 +48,7 @@ int check_push_data(char *data)
   * @s: The string to be checked.
   *
   * Return: 1 if all if all evaluated characters are digits except
-  * 		for hyphens or 0 if not
+  *			for hyphens or 0 if not
   */
 
 int check_digits(char *s)

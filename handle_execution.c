@@ -5,12 +5,12 @@
   * @op_code: The operation code to execute.
   * @data: The data that comes with the instruction.
   * @line: The line on which the error occurred
-  * @meth_status: The method to be used by the interpreter
+  * @mstat: Indicates if the push operation should be stack or queue
   *
   * Return: 0 if the operation was successful or errcode if its invalid.
   */
 
-int handle_execution(char *op_code, char *data, unsigned int line, int meth_status)
+int handle_execution(char *op_code, char *data, unsigned int line, int mstat)
 {
 	int status_op = 0;
 	void (*opcode_function)(stack_t **, unsigned int);
@@ -29,7 +29,7 @@ int handle_execution(char *op_code, char *data, unsigned int line, int meth_stat
 			if (status_op == ERR_PUSH)
 				return (ERR_PUSH);
 
-			if (meth_status != 0 && meth_status == METH_QUEUE)
+			if (mstat != 0 && mstat == METH_QUEUE)
 				opcode_function = select_op("push_queue");
 
 			opcode_function(&head, atoi(data));
@@ -37,7 +37,7 @@ int handle_execution(char *op_code, char *data, unsigned int line, int meth_stat
 		else
 			opcode_function(&head, line);
 
-		return (meth_status);
+		return (mstat);
 	}
 
 	return (ERR_INVALID);

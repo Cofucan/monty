@@ -67,7 +67,7 @@ typedef struct instruction_s
 
 extern stack_t *head;
 
-int handle_execution(char *op_code, char *data, unsigned int line, int meth_status);
+int handle_execution(char *op_code, char *data, unsigned int line, int mstat);
 void handle_error(int errno, char *opcode, unsigned int line, char *line_read);
 void handle_inv_malloc(int errno, char *opcode, unsigned int line);
 void handle_more_errors(int errno, unsigned int line);

@@ -5,7 +5,7 @@
   * @s: The instruction to be executed
   *
   * Return: Pointer to the function to be executed or
-  * 		NULL if the function don't exists
+  *			NULL if the function don't exists
   */
 
 void (*select_op(char *s))(stack_t **, unsigned int)
@@ -29,8 +29,8 @@ void (*select_op(char *s))(stack_t **, unsigned int)
 		{ "mod", mod },
 		{ NULL, NULL }
 	};
-
 	int i = 0;
+
 	while (ops[i].opcode)
 	{
 		if (strcmp(s, ops[i].opcode) == 0)
