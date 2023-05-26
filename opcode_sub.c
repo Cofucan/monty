@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * sub - Subtracts the top element of the stack
+ * sub - func that subtracts the top element of the stack
  * from the second top element of the stack
- * @stack: The head of the stack
+ * @stack: head of the stack
  * @line_number: The line on which the error occurred
  *
  * Return: Nothing
