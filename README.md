@@ -133,3 +133,15 @@ push 3
 pall
 add
 pall
+
+5. nop
+
+Implement the nop opcode.
+
+The nop opcode
+
+The opcode nop doesn’t do anything.
+
+Usage: nop
+
+Task 0 - 5 are mandatory task
