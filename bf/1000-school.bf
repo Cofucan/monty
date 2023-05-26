@@ -30,3 +30,7 @@
 ---							Subtract 3 from c0
 
 .							Print the value of cell c0 {108: "l"}
+
+> ++++ ++++ ++				Add 12 to c1
+
+.							Print the value of cell c1 which is the newline character
