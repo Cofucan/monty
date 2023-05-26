@@ -44,4 +44,11 @@ The opcode pall prints all the values on the stack, starting from the top of the
 
 Usage pall
 Format: see example
-If the stack is empty, don’t print anything 
+If the stack is empty, don’t print anything
+
+julien@ubuntu:~/monty$ cat -e bytecodes/00.m
+push 1$
+push 2$
+push 3$
+pall$
+
