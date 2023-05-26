@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
-  * nop - Doesn’t do anything
+  * nop - Does nothing
   * @stack: The head of the stack
-  * @line_number: The line on which the error occurred
+  * @line_number: Line number of the command in the bytecode file
   *
   * Return: Nothing
   */
 void nop(stack_t **stack, unsigned int line_number)
 {
-	(void) stack;
 	(void) line_number;
+	(void) stack;
 }

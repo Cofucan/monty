@@ -4,7 +4,7 @@
   * handle_execution - Manages the operations to be executed by the interpreter
   * @op_code: The operation code to execute.
   * @data: The data that comes with the instruction.
-  * @line: The line on which the error occurred
+  * @line: Line number of the command in the bytecode file
   * @mstat: Indicates if the push operation should be stack or queue
   *
   * Return: 0 if the operation was successful or errcode if its invalid.

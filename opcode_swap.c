@@ -3,7 +3,7 @@
 /**
  * swap - Swaps the top two elements of the stack
  * @stack: The head of the stack
- * @line_number: The line on which the error occurred
+ * @line_number: Line number of the command in the bytecode file
  *
  * Return: Nothing
  */
